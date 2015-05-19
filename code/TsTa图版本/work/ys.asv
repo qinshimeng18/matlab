@@ -1,0 +1,9 @@
+function ys(t_a,t_s)
+global temp;
+if (flags==1){
+		return 0.2645*sin(w*t) - 0.0124*(ts - t0) - 1290 * (ts - ta);
+	}
+	else{
+		double aa = 0.2645*sin(w*t) - 0.0124*(ts - t0);
+		return aa;
+	}

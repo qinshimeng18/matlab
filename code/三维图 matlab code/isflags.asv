@@ -1,0 +1,15 @@
+function isflags(flags,t_s)
+global temp;
+if flags == 1
+    if t_s<temp(3)
+        flaga=0
+    else
+        flaga=1
+    end
+else
+    if t_a<=temp(2)
+        flaga=1
+    else
+        flags=0
+    end
+end

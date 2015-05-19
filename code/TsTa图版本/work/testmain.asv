@@ -1,0 +1,30 @@
+ts(43201)=0;
+ta(43201)=0;
+flaga=0;flags=0;
+timea=0;
+global temp;
+temp(1)=8;temp(2)=18;temp(3)=25;temp(4)=32;%h\k\r\m
+temp(5)=5;%temperature t0
+temp(6)=0.194;%the time of guolu 
+temp(7)=0;%the time of fengshan
+temp(8)=0;%the ys==dys * time 1
+temp(9)=0;%the ya==dya
+temp(10)=pi/(12*3600); %w
+ts(1)=5;ta(1)=18;
+for t=1:43200
+    t_a=ta(t);%current temperature of a
+	t_s=ts(t);%current temperature of s
+    isflaga(flaga,t_a);%if a to open 1 or close 0
+    isflags(flags,t_s);%if s to open 1 or close 0
+    ys(flags,t_s,t_a,t);
+    ya(flaga,flags,t_s,t_a,t);
+    ts(t+1)=t_s+temp(8);
+    ta(t+1)=t_a+temp(9);
+end
+%h=figure(1)
+%x=1:433
+%ts;
+%h1=line(ts,x)
+%h2=line(ta)
+plot(ts)
+plot(ta)

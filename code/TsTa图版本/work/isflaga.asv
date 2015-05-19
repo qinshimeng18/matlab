@@ -1,0 +1,16 @@
+function isflaga(flaga,t_a)
+global temp;
+if flaga == 1
+    temp()
+    if t_a>temp(1)
+        flaga=0
+    else
+        flaga=1
+    end
+else
+    if t_a<=temp(2)
+        flaga=1
+    else
+        flaga=0
+    end
+end
