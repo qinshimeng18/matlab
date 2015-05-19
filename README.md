@@ -31,3 +31,5 @@
         分别用matlab和C++实现。matlab中分为二维和三维图文件夹，即多一个main.m函数。因为用的是大循环所以matlab会
         跑二十分钟左右但c++会在几秒内完成。
 
+![github](https://github.com/qinshimeng18/matlab/blob/master/pics%20of%20%20result/TsTa%E5%9B%BE.PNG)
+![github](https://github.com/qinshimeng18/matlab/blob/master/pics%20of%20%20result/%E4%B8%89%E7%BB%B4%E5%9B%BE%E6%B8%85%E6%99%B0%E7%89%881.PNG)
